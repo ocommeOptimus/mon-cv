@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    font-family: 'open_sansregular', Arial, Helvetica, sans-serif;
+}
+
+body{
+    border: 2px #c4c4c4 solid;
+    width: 1180px;
+    margin: auto;
+    display: flex;
+}
+
+/* Contenu, avec la photo de profil, sur fond jaune qui s'étale à la verticale sur la gauche */
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    background-color: #ffcf00;
+}
+#photo{
+    display: flex;
+    padding: 70px 0px;
+}
+aside img{
+    display: block;
+    max-width: 200px;
+    border: 3px #dfb300 solid;
+    border-radius: 100%;
+    margin: auto;
+}
+aside h2{
+    color: #ffcf00;
+    text-align: center;
+    background-color: #424242;
+}
+aside i{
+    color: #424242;
+    font-size: 35px;
+    font-weight: 100;
+    border: 2px #424242 solid;
+}
+.aside_bloc:nth-child(3){
+    flex: 2;
+    text-align: justify;
+}
+.aside_bloc:nth-child(4){
+    text-align: center;
+    padding-bottom: 40px;
+}
+.aside_bloc p{
+    padding: 20px 20px 40px 20px;
+}
+
+/* Contenu avec le titre, la formation, les expériences professionnelles et les recommandations */
+
+#content{
+    width: 65%;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+#entete{
+    margin: 100px 0px;
+}
+h1{
+    font-size: 37px;
+    margin-bottom: 10px;
+}
+h1+p{
+    font-size: 21px;
+}
+#title_color{
+    color: #ffcf00;
+}
+#title_border{
+    border-bottom: 2px #ffcf00 solid;
+}
+#content h2{
+    padding-bottom: 20px;
+    border-bottom: 2px #ffcf00 solid;
+}
+h2 i{
+    color: #ffcf00;
+    margin-right: 20px;
+}
+ul {
+    list-style: none;
+  }
+  
+ul li::before {
+    content: "\2022"; 
+    color: #ffcf00;
+    font-size: 29px;
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+.bloc h3, h4{
+    color: #424242;
+}
+.bloc p{
+    color: #424242;
+}
+.bloc section, li{
+    display: flex;
+    justify-content: space-around;
+}
+.period{
+    flex: 1;
+}
+.period p, h3{
+    margin: 0px;
+    font-weight: bold;
+}
+.description{
+    flex: 2;
+}
+
+/* Media Queries pour un style responsive */
