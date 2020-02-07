@@ -1,24 +1,52 @@
 @font-face {
-    font-family: 'open_sansregular';
-    src: url('fonts/OpenSans-Regular-webfont.eot');
-    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/OpenSans-Regular-webfont.woff2') format('woff2'),
-         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
-         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-family: 'aileronregular';
+    src: url('fonts/Aileron-Regular-webfont.eot');
+    src: url('fonts/Aileron-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Aileron-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Aileron-Regular-webfont.woff') format('woff'),
+         url('fonts/Aileron-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Aileron-Regular-webfont.svg#aileronregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'aileronlight';
+    src: url('fonts/Aileron-Light-webfont.eot');
+    src: url('fonts/Aileron-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Aileron-Light-webfont.woff2') format('woff2'),
+         url('fonts/Aileron-Light-webfont.woff') format('woff'),
+         url('fonts/Aileron-Light-webfont.ttf') format('truetype'),
+         url('fonts/Aileron-Light-webfont.svg#aileronlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'aileronultralight';
+    src: url('fonts/Aileron-UltraLight-webfont.eot');
+    src: url('fonts/Aileron-UltraLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Aileron-UltraLight-webfont.woff2') format('woff2'),
+         url('fonts/Aileron-UltraLight-webfont.woff') format('woff'),
+         url('fonts/Aileron-UltraLight-webfont.ttf') format('truetype'),
+         url('fonts/Aileron-UltraLight-webfont.svg#aileronultralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *{
-    font-family: 'open_sansregular', Arial, Helvetica, sans-serif;
+    font-family: 'aileronregular', Arial, Helvetica, sans-serif;
 }
 
 body{
     border: 2px #c4c4c4 solid;
-    width: 1180px;
+    width: 1190px;
     margin: auto;
     display: flex;
+}
+p{
+    color: #424242;
 }
 
 /* Contenu, avec la photo de profil, sur fond jaune qui s'étale à la verticale sur la gauche */
@@ -27,31 +55,28 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 25%;
+    width: 32.5%;
     background-color: #ffcf00;
 }
 #photo{
     display: flex;
-    padding: 70px 0px;
+    padding: 75px 0px;
 }
 aside img{
     display: block;
-    max-width: 200px;
+    max-width: 225px;
     border: 3px #dfb300 solid;
     border-radius: 100%;
     margin: auto;
 }
 aside h2{
+    font-size: 31px;
     color: #ffcf00;
     text-align: center;
+    padding: 7px 0px;;
     background-color: #424242;
 }
-aside i{
-    color: #424242;
-    font-size: 35px;
-    font-weight: 100;
-    border: 2px #424242 solid;
-}
+
 .aside_bloc:nth-child(3){
     flex: 2;
     text-align: justify;
@@ -61,72 +86,100 @@ aside i{
     padding-bottom: 40px;
 }
 .aside_bloc p{
-    padding: 20px 20px 40px 20px;
+    font-weight: 600;
+    padding: 20px 45px 40px 45px;
+}
+#hobbies{
+    display: flex;
+    padding: 0px 60px;
+}
+#hobbies img{
+    max-width: 65px;
+    padding: 3px;
+    border: 3px #424242 solid;
+    border-radius: 100%;
 }
 
 /* Contenu avec le titre, la formation, les expériences professionnelles et les recommandations */
 
 #content{
-    width: 65%;
-    margin-left: 50px;
-    margin-right: 20px;
+    width: 60%;
+    margin-left: 60px;
+    margin-right: 45px;
 }
 #entete{
-    margin: 100px 0px;
+    margin: 110px 0px 130px 0px;
 }
 h1{
-    font-size: 37px;
+    font-family: 'aileronultralight';
+    font-size: 63px;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 h1+p{
-    font-size: 21px;
+    font-size: 31px;
+    font-weight: 600;
+    margin-bottom: 0px;
 }
 #title_color{
+    font-family: 'aileronlight';
+    font-weight: bolder;
     color: #ffcf00;
 }
 #title_border{
     border-bottom: 2px #ffcf00 solid;
 }
 #content h2{
+    font-size: 31px;
     padding-bottom: 20px;
+    margin: 0px 0px 45px 0px;
     border-bottom: 2px #ffcf00 solid;
 }
 h2 i{
     color: #ffcf00;
-    margin-right: 20px;
+    margin-right: 40px;
 }
-ul {
-    list-style: none;
-  }
-  
-ul li::before {
-    content: "\2022"; 
-    color: #ffcf00;
-    font-size: 29px;
-    font-weight: bold; 
-    display: inline-block; 
-    width: 1em; 
-    margin-left: -1em; 
-}
-.bloc h3, h4{
+
+#content h3, h4{
     color: #424242;
 }
-.bloc p{
-    color: #424242;
+#content h3{
+    font-size: 23px;
 }
-.bloc section, li{
+#content h4{
+    font-family: 'aileronlight';
+    font-size: 17px;
+}
+
+section{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
-.period{
-    flex: 1;
+.conteneur{
+    padding-bottom: 45px;
+}
+.conteneur, .period{
+    display: flex;
+    justify-content: space-between;
+}
+
+.period i{
+    font-size: 13px;
+    color: #ffcf00;
+    margin-right: 15px;
+}
+i[class*="far"]{
+    font-size: 19px;
 }
 .period p, h3{
     margin: 0px;
     font-weight: bold;
 }
 .description{
-    flex: 2;
+    width: 65%;
+}
+.reco{
+    width: 45%;
 }
 
 /* Media Queries pour un style responsive */
