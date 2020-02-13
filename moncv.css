@@ -98,8 +98,7 @@ aside h2{
 #hobbies img{
     max-width: 65px;
     margin: 0px 15px;
-    padding: 3px;
-    border: 3px #424242 solid;
+    border: 2px #424242 solid;
     border-radius: 100%;
 }
 
