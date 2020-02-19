@@ -40,12 +40,16 @@
 }
 
 body{
+    max-width: 1190px;
     border: 2px #c4c4c4 solid;
     margin: auto;
     display: flex;
 }
 p{
     color: #424242;
+}
+q{
+    font-style: italic;
 }
 
 /* Contenu, avec la photo de profil, sur fond jaune qui s'étale à la verticale sur la gauche */
@@ -167,20 +171,29 @@ section{
 .container{
     padding-bottom: 45px;
 }
-.container, .period{
+.container{
     display: flex;
     justify-content: space-between;
+}
+.period{
+    display: flex;
+    justify-content: flex-start;
 }
 .period i{
     font-size: 13px;
     color: #ffcf00;
     margin-right: 15px;
+    padding: 4px;
 }
 i[class*="far"]{
     font-size: 19px;
+    padding: 0;
 }
 .period p, h3{
     margin: 0px;
+}
+.period{
+    width: 30%;
 }
 .description{
     width: 65%;
@@ -248,7 +261,7 @@ i[class*="far"]{
     }
     #content h2{
         text-align: center;
-        font-size: 23px;
+        font-size: 29px;
         padding-bottom: 20px;
         padding-top: 15px;
         margin-bottom: 15px;
